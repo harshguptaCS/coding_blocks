@@ -42,7 +42,7 @@ public class Main {
         else break;
         k=1;
         while(true)
-        if((i!=n-k&&j!=n-k)&&(i==j)){
+        if((i!=n-k&&j!=n-k)&&(i==j||i+j==n-1)){
             harsh(n,i+k,j+k,ans+"B");
             k++;
         }
