@@ -5,8 +5,17 @@ public class Main {
         int t=sc.nextInt();
         for(int i=0;i<t;i++){
             String s=sc.next();
-            s=s.replace("pi","3.14");
-            System.out.println(s);
+            harsh(s,0,"");
         }
+    }
+    public static void harsh(String s,int i,String ans){
+        if(i==s.length()){
+            System.out.println(ans);
+            return;
+        }
+        if(i!=s.length()-1&&(s.charAt(i)=='p'&&s.charAt(i+1)=='i')){
+            harsh(s,i+2,ans+"3.14");
+        }
+        else harsh(s,i+1,ans+s.charAt(i));
     }
 }
