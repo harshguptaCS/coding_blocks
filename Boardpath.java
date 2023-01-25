@@ -15,8 +15,8 @@ public class Main
             h++;
 	        return;
 	    }
-	    if(sum>target) return;
 	    for(int i=1;i<=n;i++){
+            if(sum+i>target) return;
 	        harsh(n,target,s+i,sum+i);
 	    }
 	}
