@@ -22,12 +22,6 @@ public class Main {
         }
         int k=1;
         while(true)
-        if((i==0||i==n-1)&&j!=n-k){
-            harsh(n,i,j+k,ans+"R");
-            k++;
-        }
-        else break;
-        while(true)
         if((i==0||i==n-1||j==0)&&j!=n-k){
             harsh(n,i,j+k,ans+"R");
             k++;
